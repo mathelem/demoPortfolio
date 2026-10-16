@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdessamie — Y2K Portfolio ✦</title>
+  <meta name="description" content="Y2K-flavoured portfolio of Abdessamie, computer science student at ENSTA: about, skills, projects and contact." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#eef3fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14162c" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='25' x='2' font-size='26'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-star" aria-hidden="true">✦</span> abdessamie.exe
+      </a>
+
+      <button id="theme-toggle" class="icon-btn" aria-label="Switch theme">
+        <span id="theme-icon" aria-hidden="true">☾</span>
+      </button>
+
+      <button id="nav-toggle" class="icon-btn nav-toggle" aria-expanded="false"
+              aria-controls="nav-links" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#skills" data-section="skills">Skills</a></li>
+        <li><a href="#projects" data-section="projects">Projects</a></li>
+        <li><a href="#contact" data-section="contact">Contact <span class="blink-pill" aria-hidden="true">new!</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero">
+      <div class="hero-stars" aria-hidden="true">
+        <span class="star s1">✦</span>
+        <span class="star s2">✧</span>
+        <span class="star s3">✦</span>
+        <span class="star s4">✧</span>
+        <span class="star s5">✦</span>
+      </div>
+
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker"><span aria-hidden="true">✦</span> cybersecurity student — ensta algiers — 4th year</p>
+          <h1>Hey, I’m <span class="shine">Abdessamie</span><span class="wave" aria-hidden="true"> o(ˆ‿ˆ)o</span></h1>
+          <p class="lead">
+            A 4th-year cybersecurity engineering student with a soft spot for building things:
+            I explore SOC analysis on the security side and web development on the creative side.
+            Welcome to my little corner of the internet.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <svg id="skill-map" viewBox="0 0 320 262" role="img" aria-label="Skill map: press a bubble to read the details below the graphic.">
+            <defs>
+              <linearGradient id="cgrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#cabcf7" />
+                <stop offset="1" stop-color="#8ed0c5" />
+              </linearGradient>
+            </defs>
+
+            <g class="links" aria-hidden="true">
+              <line x1="160" y1="132" x2="160" y2="32" />
+              <line x1="160" y1="132" x2="255" y2="101" />
+              <line x1="160" y1="132" x2="219" y2="213" />
+              <line x1="160" y1="132" x2="101" y2="213" />
+              <line x1="160" y1="132" x2="65"  y2="101" />
+            </g>
+
+            <g class="center" aria-hidden="true">
+              <circle cx="160" cy="132" r="40" fill="url(#cgrad)" />
+              <text x="160" y="139" text-anchor="middle">WEB</text>
+            </g>
+
+            <g class="node" tabindex="0" role="button" data-info="web" aria-label="Web: show skill details">
+              <circle cx="160" cy="32" r="28" />
+              <text x="160" y="36" text-anchor="middle">HTML</text>
+            </g>
+            <g class="node" tabindex="0" role="button" data-info="laravel" aria-label="Laravel: show skill details">
+              <circle cx="255" cy="101" r="28" />
+              <text x="255" y="105" text-anchor="middle">PHP</text>
+            </g>
+            <g class="node" tabindex="0" role="button" data-info="data" aria-label="Data: show skill details">
+              <circle cx="219" cy="213" r="28" />
+              <text x="219" y="217" text-anchor="middle">DATA</text>
+            </g>
+            <g class="node" tabindex="0" role="button" data-info="network" aria-label="Network: show skill details">
+              <circle cx="101" cy="213" r="28" />
+              <text x="101" y="217" text-anchor="middle">NET</text>
+            </g>
+            <g class="node" tabindex="0" role="button" data-info="tools" aria-label="Tools: show skill details">
+              <circle cx="65" cy="101" r="28" />
+              <text x="65" y="105" text-anchor="middle">TOOLS</text>
+            </g>
+          </svg>
+
+          <figcaption id="skill-caption">
+            Tip: click (or use Tab + Enter on) a bubble to read what’s inside.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-tag">01 / about.txt</p>
+        <h2>A little intro</h2>
+        <p class="section-intro">
+          Who I am, how I got here, and what I’m aiming at — the short version, in Windows-98 folder form.
+        </p>
+
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              I study cybersecurity at the National Higher School of Advanced Technologies (ENSTA),
+              and I now count my experience in years rather than semesters. Security taught me to be
+              rigorous and methodical; building small web tools keeps the playful half of my brain awake.
+            </p>
+            <p>
+              My interests sit between two worlds: in a SOC, I love the puzzle of reading logs
+              and understanding what really happened on a network; on the web side, I enjoy crafting
+              accessible interfaces like this one. Already tested in the field: an internship at
+              <a href="https://intervalle-technologies.com" rel="noopener">Intervalle Technologies</a>
+              in Algiers, a cybersecurity &amp; GRC firm.
+            </p>
+
+            <h3 class="sub-title">Education &amp; experience</h3>
+            <ul class="timeline">
+              <li>
+                <p class="meta">2026 — now</p>
+                <h4>ENSTA — cybersecurity, engineering cycle (4th year)</h4>
+                <p>Advanced security topics, networks, and web technologies — plus this WAMD portfolio module.</p>
+              </li>
+              <li>
+                <p class="meta">Intervalle Technologies · Algiers</p>
+                <h4>Intern — cybersecurity &amp; GRC firm</h4>
+                <p>
+                  First taste of the professional side of security: audit culture, compliance
+                  (ISO 27001, NIST CSF) and how a managed SOC serves regulated clients.
+                </p>
+              </li>
+              <li>
+                <p class="meta">2025</p>
+                <h4>LabSync — class project</h4>
+                <p>Co-built a lab-management prototype (React Native + Supabase) for teachers and students.</p>
+              </li>
+              <li>
+                <p class="meta">2022</p>
+                <h4>Science baccalaureate</h4>
+                <p>With honours — and my first HTML page, written in Notepad because it felt retro.</p>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="window-card" aria-label="Quick facts">
+            <p class="window-bar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span> about-me.txt</p>
+            <dl class="facts window-body">
+              <div><dt>Name</dt><dd>Abdessamie</dd></div>
+              <div><dt>Location</dt><dd>Boumerdès, Algeria</dd></div>
+              <div><dt>School</dt><dd>ENSTA — cybersecurity, 4th year</dd></div>
+              <div><dt>Languages</dt><dd>English · French · Arabic</dd></div>
+              <div><dt>Looking for</dt><dd>Internship — SOC analysis or web dev</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-tag">02 / skill_inventory.zip</p>
+        <h2>Skills & tools</h2>
+        <p class="section-intro">
+          Honest levels — the bars fill in when you scroll, exactly like progress bars in late-90s installers.
+        </p>
+
+        <ul class="skill-list">
+          <li class="skill-item">
+            <p class="skill-head"><span>HTML & CSS</span><span class="skill-value">85%</span></p>
+            <div class="bar"><span class="fill" data-level="85"></span></div>
+            <p class="skill-note">Semantic pages, Flexbox, Grid, responsive layouts (freeCodeCamp certified).</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>JavaScript</span><span class="skill-value">65%</span></p>
+            <div class="bar"><span class="fill" data-level="65"></span></div>
+            <p class="skill-note">DOM manipulation, event handling, small interactive widgets like this page.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>Python & data</span><span class="skill-value">70%</span></p>
+            <div class="bar"><span class="fill" data-level="70"></span></div>
+            <p class="skill-note">Pandas for cleaning and charting datasets, plus Plotly dashboards.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>SQL & databases</span><span class="skill-value">75%</span></p>
+            <div class="bar"><span class="fill" data-level="75"></span></div>
+            <p class="skill-note">Relational modelling, joins and queries; NoSQL basics with MongoDB.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>PHP / Laravel</span><span class="skill-value">55%</span></p>
+            <div class="bar"><span class="fill" data-level="55"></span></div>
+            <p class="skill-note">Back-end fundamentals: routing, controllers and database-driven pages.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>Git & project tools</span><span class="skill-value">60%</span></p>
+            <div class="bar"><span class="fill" data-level="60"></span></div>
+            <p class="skill-note">Git workflows, plus Jira, Trello and Asana for team planning.</p>
+          </li>
+        </ul>
+
+        <h3 class="sub-title">Languages ✦</h3>
+        <ul class="skill-list language-list">
+          <li class="skill-item">
+            <p class="skill-head"><span>Arabic <span aria-hidden="true">العربية</span></span><span class="skill-value">100%</span></p>
+            <div class="bar"><span class="fill" data-level="100"></span></div>
+            <p class="skill-note">Native language — first tongue.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>English</span><span class="skill-value">75%</span></p>
+            <div class="bar"><span class="fill" data-level="75"></span></div>
+            <p class="skill-note">Professional reading level & comfortable speaking.</p>
+          </li>
+          <li class="skill-item">
+            <p class="skill-head"><span>Français</span><span class="skill-value">60%</span></p>
+            <div class="bar"><span class="fill" data-level="60"></span></div>
+            <p class="skill-note">Good conversation & reading level.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-tag">03 / projects_tree.mid</p>
+        <h2>Things I’ve built</h2>
+        <p class="section-intro">
+          School projects and self-teaching experiments. Use the filters to jump between categories.
+        </p>
+
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+          <button class="chip" data-filter="data" aria-pressed="false">Data</button>
+          <button class="chip" data-filter="network" aria-pressed="false">Network</button>
+        </div>
+
+        <div id="project-grid" class="project-grid">
+          <article class="card" data-category="web">
+            <p class="card-no">01</p>
+            <h3>Y2K Portfolio <span aria-hidden="true">✦</span></h3>
+            <p>This very page: a nostalgic early-2000s style portfolio with responsive layout,
+               theme toggle, filters and form validation — all vanilla.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Vanilla JS</li></ul>
+            <a class="card-link" href="https://github.com/mathelem/demoPortfolio" rel="noopener">Source on GitHub <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card" data-category="web">
+            <p class="card-no">02</p>
+            <h3>LabSync</h3>
+            <p>A lab-management prototype for classes: sessions, materials and notifications
+               for teachers and students. Built as a team during school.</p>
+            <ul class="tags"><li>React Native</li><li>Expo</li><li>Supabase</li></ul>
+            <p class="demo-note"><span aria-hidden="true">✧</span> demo entry — details on request</p>
+          </article>
+
+          <article class="card" data-category="data">
+            <p class="card-no">03</p>
+            <h3>Retail data dashboard</h3>
+            <p>Amazon-style sales exploration: cleaned a raw orders dataset, engineered a few
+               features and built an interactive dashboard to compare categories.</p>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>Plotly Dash</li></ul>
+            <p class="demo-note"><span aria-hidden="true">✧</span> demo entry — details on request</p>
+          </article>
+
+          <article class="card" data-category="data">
+            <p class="card-no">04</p>
+            <h3>Relational DB lab</h3>
+            <p>Designed and normalised a product-catalogue schema, then loaded it and
+               benchmarked a set of SQL queries for a distributed-databases lab.</p>
+            <ul class="tags"><li>SQL</li><li>Database design</li><li>3NF</li></ul>
+            <p class="demo-note"><span aria-hidden="true">✧</span> demo entry — details on request</p>
+          </article>
+
+          <article class="card" data-category="network">
+            <p class="card-no">05</p>
+            <h3>Subnet calculator</h3>
+            <p>A small JS tool that splits an IP range into subnets, with a visual map of
+               usable hosts — written to survive a networking exam.</p>
+            <ul class="tags"><li>JavaScript</li><li>IP math</li><li>UI</li></ul>
+            <p class="demo-note"><span aria-hidden="true">✧</span> demo entry — details on request</p>
+          </article>
+
+          <article class="card" data-category="network">
+            <p class="card-no">06</p>
+            <h3>Home lab</h3>
+            <p>Two old machines turned into a tiny LAN: one Linux server with SSH, one client,
+               and a lot of documentation about everything that went wrong.</p>
+            <ul class="tags"><li>Linux</li><li>SSH</li><li>Networking</li></ul>
+            <p class="demo-note"><span aria-hidden="true">✧</span> demo entry — details on request</p>
+          </article>
+        </div>
+
+        <p id="empty-note" class="empty-note" hidden>No projects in this category yet ✦ check back soon.</p>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <p class="section-tag">04 / contact_gbook.asp</p>
+        <h2>Sign my guestbook</h2>
+        <p class="section-intro">
+          Say hi, ask a question or invite me to a hackathon — the form checks your input
+          before it “sends” (it’s a school demo, nothing leaves your browser).
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <h3>Other channels</h3>
+            <ul class="contact-links">
+              <li><span class="li-star" aria-hidden="true">✦</span> <a href="mailto:aa.mezaache@ensta.edu.dz">aa.mezaache@ensta.edu.dz</a></li>
+              <li><span class="li-star" aria-hidden="true">✦</span> <a href="https://github.com/mathelem" rel="noopener">GitHub — github.com/mathelem</a></li>
+              <li><span class="li-star" aria-hidden="true">✦</span> <a href="https://www.linkedin.com/in/abdessamie-mezaache-274327332/" rel="noopener">LinkedIn — abdessamie-mezaache</a></li>
+            </ul>
+            <p class="fine-print">Reply time: usually within 24h, or 2 days on weekends when
+               I pretend it’s still 2001 and I have dial-up excuses.</p>
+          </div>
+
+          <div class="window-card">
+            <p class="window-bar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span> new_message.exe</p>
+            <form id="contact-form" class="form window-body" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" />
+                <p class="error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+                <p class="error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <p class="error" aria-live="polite"></p>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send message ✦</button>
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; <span id="year"></span> Abdessamie — html + css + vanilla js, no frameworks.</p>
+      <p class="nosta">you are visitor no. <span class="counter" id="visits">000137</span> <span aria-hidden="true">✦</span> best viewed at 800×600 <span aria-hidden="true">✦</span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
